@@ -1,0 +1,501 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+html {
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+p {
+    margin: 15px 0;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+a {
+    color: #000;
+}
+
+.white-text {
+    color: #fff !important;
+}
+
+.opacity {
+    opacity: 0.6;
+}
+
+.grey-hover {
+    background-color: #000 !important;
+    margin-bottom: 16px !important;    
+    
+}
+
+.grey-hover:hover {
+    background-color: #ccc !important;
+    color: #000 !important;
+}
+
+.row {
+    padding: 32px 0px;  
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.grey-text {
+    color: #757575 !important;
+}
+
+.col {
+    float: left;
+}
+
+.col-third {
+    width: calc(100%/3);
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+/* 
+1. Vi tri
+2/ Kich thuoc
+3. Mau sac
+4. Kieu dang
+*/
+
+/* Tu ngoai vao trong
+Tu tren xuong duoi */
+
+/* #main {
+    overflow: hidden;
+} */
+
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style: none;
+    top: 100%;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav #nav-arrow-down {
+    font-size: 13px;
+}
+
+#nav .subnav {
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+#nav .subnav a {    
+    line-height: 22px;
+    padding: 8px 16px;
+}
+
+#nav > li > a {
+    text-transform: uppercase;
+}
+
+header nav a,
+header .header-btn {
+    display: block;
+    padding: 0 24px;
+    line-height: 46px;
+    text-decoration: none;
+}
+
+header .subnav li:hover a,
+header #nav > li:hover > a {
+    color: #000 !important;
+    background-color: #ccc;
+}
+
+header #nav > li:last-child:hover .subnav {
+    display: block;
+}
+
+nav .header-btn {
+    float: right;
+}
+
+nav .search-btn:hover {
+    background-color: #f44336;
+}
+
+header div.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@keyframes example {
+    0%   {background: url('/assets/img/slider/chicago.jpg') top center / cover no-repeat;}
+    50%  {background: url('/assets/img/slider/ny.jpg') top center / cover no-repeat;}    
+    100%  {background: url('/assets/img/slider/la.jpg') top center / cover no-repeat;}
+}
+  
+  /* The element to apply the animation to */
+
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    /* ti le theo chieu ngang cua chinh no */
+    position: relative;
+    animation-name: example;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+.slider-content {
+    position: absolute;    
+    text-align: center;
+    padding: 32px 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.slider-content h3 {
+    font-size: 24px;
+}
+
+.slider-content p {
+    font-weight: bold;
+}
+
+#content .section-content {
+    text-align: center;
+    padding: 64px 16px;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+
+#content .heading {
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 4px;   
+}
+
+
+#content .about-content {
+    text-align: justify;
+}
+
+.band-member {
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+
+.band-member img {
+    width: 60%;
+    border-radius: 4px;
+}
+
+.tour-section {
+    background-color: #000;    
+    width: 100%;
+}
+
+section .tour-month {
+    list-style: none;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+
+section .tour-month li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+section .tour-month li span{
+    background-color: #f44336;
+    padding: 3px 8px;
+    margin-left: 16px;
+}
+
+
+
+section .tour-month li:last-child span {
+    background-color: #000;
+    border-radius: 50%;
+    float: right;
+    margin-right: 16px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    width: 24px;
+    padding: 0 8px;
+}
+
+.tour-section .buy-tickets {
+    text-align: left;
+    margin: 0 -8px;          
+}
+
+.buy-tickets .ticket-content {
+    background-color: #fff;
+    padding: 0.15px 16px;
+}
+
+.tour-section .buy-tickets img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.tour-section .buy-tickets img:hover {
+    opacity: 0.6;
+}
+
+.tour-section .city-item {    
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+
+.tour-section .city {
+    font-weight: bold;
+}
+
+
+
+.contact-detail {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.contact-detail i {
+    font-weight: bolder;
+    padding-right: 16px;
+}
+
+.contact-detail input {
+    padding: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.contact-detail .col.col-half {
+    padding: 0 8px;
+}
+
+.row-padding {
+    margin: 0 -8px 8px;
+    overflow: hidden;
+}
+
+
+.contact-detail .send-btn {
+    color: #fff;
+    float: right;
+    margin-top: 16px;
+    line-height: 1.5;
+}
+
+.map-section img {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(50%);
+    display: block;
+}
+
+
+#footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 64px 0;
+    opacity: 0.6;
+}
+
+#footer i {
+    font-size: 24px;
+}
+
+#footer i:hover {
+    opacity: 0.5;
+}
+
+.buytiscket-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* display: flex; */
+    display: none;
+    background-color: rgba(0,0,0,0.3);
+    justify-content: center;
+    align-items: center;
+}
+
+.buytiscket-modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    /* max-width: calc(100% - 32px); */
+    width: 900px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%);    
+    /* animation: example 5s linear 2s infinite alternate; 
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;*/
+    animation: modalFadeIn 0.5s ease;
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-180px);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header.modal-heading {
+    background-color: #009688;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 16px;
+    position: relative;
+}
+
+header.modal-heading h2 {
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.buytiscket-modal i {
+    font-weight: bold;
+}
+
+header.modal-heading i {
+    font-size: 30px;
+}
+
+header.modal-heading .ti-bag {
+    margin-right: 16px;
+}
+
+header.modal-heading .close {
+    position: absolute;
+    line-height: 36px;
+    top: 0;
+    right: 0;
+    font-size: 15px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+header.modal-heading .close:hover,
+footer .close-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-container label {
+    display: block;
+    margin: 24px 0 8px;
+}
+
+.modal-body {
+    margin: 0.15px 16px;
+}
+
+.modal-container input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    overflow: visible;    
+}
+
+button.pay-btn {
+    background-color: #009688;
+    width: 100%;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.buytiscket-modal footer {
+    margin: 0 16px;
+}
+
+footer .close-btn {
+    background-color: #f44336;
+}
+
+footer .close-btn i {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.modal-footer p {
+    float: right;
+}
+
+.modal-footer p a {
+    color: #2196F3;
+}
+
