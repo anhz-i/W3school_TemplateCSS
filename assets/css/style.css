@@ -179,9 +179,9 @@ header div.mobile-menu {
 }
 
 @keyframes example {
-    0%   {background: url('/assets/img/slider/chicago.jpg') top center / cover no-repeat;}
-    50%  {background: url('/assets/img/slider/ny.jpg') top center / cover no-repeat;}    
-    100%  {background: url('/assets/img/slider/la.jpg') top center / cover no-repeat;}
+    0%   {background: url('./assets/img/slider/chicago.jpg') top center / cover no-repeat;}
+    50%  {background: url('./assets/img/slider/ny.jpg') top center / cover no-repeat;}    
+    100%  {background: url('./assets/img/slider/la.jpg') top center / cover no-repeat;}
 }
   
   /* The element to apply the animation to */
