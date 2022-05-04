@@ -178,22 +178,30 @@ header div.mobile-menu {
     right: 0;
 }
 
-@keyframes example {
-    0%   {background: url('./assets/img/slider/chicago.jpg') top center / cover no-repeat;}
-    50%  {background: url('./assets/img/slider/ny.jpg') top center / cover no-repeat;}    
-    100%  {background: url('./assets/img/slider/la.jpg') top center / cover no-repeat;}
+/* @keyframes example {
+    0%   {background: url('/assets/img/slider/chicago.jpg') top center / cover no-repeat;}
+    50%  {background: url('/assets/img/slider/ny.jpg') top center / cover no-repeat;}    
+    100%  {background: url('/assets/img/slider/la.jpg') top center / cover no-repeat;}
 }
-  
+   */
   /* The element to apply the animation to */
 
 #slider {
     margin-top: 46px;
-    padding-top: 50%;
+    /* padding-top: 50%; */
     /* ti le theo chieu ngang cua chinh no */
     position: relative;
-    animation-name: example;
+    /* animation-name: example;
     animation-duration: 7s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
+}
+
+.slider-element {
+    display: none;
+}
+
+.slider-element img {
+    width: 100%;
 }
 
 .slider-content {
