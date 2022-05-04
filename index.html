@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
 </head>
-<body>
+<body onload="SliderAnimation()">
     <div id="main">
         <div>
             <header id="header">
@@ -42,10 +42,28 @@
         </div>
 
         <div id="slider">
-            <div class="slider-content white-text">
-                <h3>Chicago</h3>
-                <p>Thank you, Chicago - A night we won't forget.</p>
+            <div class="slider-element js-slider-animation">
+                <img src="./assets/img/slider/chicago.jpg" alt="">
+                <div class="slider-content white-text">
+                    <h3>Chicago</h3>
+                    <p>Thank you, Chicago - A night we won't forget.</p>
+                </div>
             </div>
+            <div class="slider-element js-slider-animation">
+                <img src="./assets/img/slider/la.jpg" alt="">
+                <div class="slider-content white-text">
+                    <h3>Chicago</h3>
+                    <p>Thank you, Chicago - A night we won't forget.</p>
+                </div>
+            </div>
+            <div class="slider-element js-slider-animation">
+                <img src="./assets/img/slider/ny.jpg" alt="">
+                <div class="slider-content white-text">
+                    <h3>Chicago</h3>
+                    <p>Thank you, Chicago - A night we won't forget.</p>
+                </div>
+            </div>
+            
         </div>
 
         <div id="content">
@@ -266,6 +284,24 @@
                 } else {
                     header.style.height = null;
                 }
+            }
+        }
+    </script>
+    <script>
+        function SliderAnimation() {
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("js-slider-animation");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 4000);    
             }
         }
     </script>
